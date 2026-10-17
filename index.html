@@ -1,4 +1,218 @@
- Variables de color basadas en el logo (Monocromático, Negro, Gris Oscuro, Blanco) */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodCaps - Tu mood. Tu estilo. Tu gorra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="navbar">
+        <div class="logo-container">
+            <h1 class="logo-text">Mood<span>caps</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Colección</a></li>
+                <li><a href="#emprendedores">Emprendedores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Tu mood. Tu estilo. Tu gorra.</h2>
+            <p>Una gorra no es solo un accesorio, es parte de tu presencia, tus gustos y tu personalidad.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#emprendedores" class="btn btn-secondary">Comprar al Mayor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros (Misión, Visión, Valores) -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre MoodCaps</h2>
+            <p class="section-subtitle">Conectamos con personas de todas las edades a través de productos que representan quién eres.</p>
+
+            <div class="grid-2">
+                <div class="card">
+                    <i class="fas fa-bullseye card-icon"></i>
+                    <h3>Nuestra Misión</h3>
+                    <p>Conectar con personas de todas las edades a través de gorras de alta calidad que transmitan presencia, actitud y estilo propio. Buscamos democratizar la moda brindando una atención al cliente excepcional y convirtiéndonos en un aliado estratégico para emprendedores.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-eye card-icon"></i>
+                    <h3>Nuestra Visión</h3>
+                    <p>Evolucionar hacia un modelo de fabricación propia que garantice los estándares más altos de calidad a precios mayoristas altamente competitivos. Nos proyectamos como una marca referente en Colombia con proyección internacional.</p>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <h3 class="subsection-title">Nuestros Valores</h3>
+            <div class="values-grid">
+                <div class="value-item"><i class="fas fa-fingerprint"></i> <h4>Identidad</h4></div>
+                <div class="value-item"><i class="fas fa-award"></i> <h4>Calidad</h4></div>
+                <div class="value-item"><i class="fas fa-rocket"></i> <h4>Emprendimiento</h4></div>
+                <div class="value-item"><i class="fas fa-lightbulb"></i> <h4>Innovación</h4></div>
+                <div class="value-item"><i class="fas fa-handshake"></i> <h4>Confianza</h4></div>
+                <div class="value-item"><i class="fas fa-check-circle"></i> <h4>Disciplina</h4></div>
+                <div class="value-item"><i class="fas fa-heart"></i> <h4>Pasión</h4></div>
+                <div class="value-item"><i class="fas fa-users"></i> <h4>Comunidad</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo / Productos -->
+    <section id="productos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Colección en Tendencia</h2>
+            <p class="section-subtitle">Elige el estilo que mejor combine con tu mood de hoy.</p>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <i class="fas fa-hat-cowboy-side"></i>
+                    </div>
+                    <h4>Gorra Urban Street Classic</h4>
+                    <p class="price">$45.000 COP</p>
+                    <button class="btn btn-sm" onclick="mostrarAlerta('Gorra Urban Street Classic')">Pedir por WhatsApp</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Gorra Snapback Premium</h4>
+                    <p class="price">$50.000 COP</p>
+                    <button class="btn btn-sm" onclick="mostrarAlerta('Gorra Snapback Premium')">Pedir por WhatsApp</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-img-placeholder">
+                        <i class="fas fa-hat-winter"></i>
+                    </div>
+                    <h4>Gorra Trucker Minimalist</h4>
+                    <p class="price">$40.000 COP</p>
+                    <button class="btn btn-sm" onclick="mostrarAlerta('Gorra Trucker Minimalist')">Pedir por WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Oportunidad para Emprendedores -->
+    <section id="emprendedores" class="section bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-title light">¿Quieres Emprender con Nosotros?</h2>
+            <p class="lead">MoodCaps no es solo una marca, es una oportunidad de negocio. Te ofrecemos compras al por mayor con precios competitivos para que inicies o hagas crecer tu propio negocio de gorras.</p>
+            <ul class="benefit-list">
+                <li><i class="fas fa-check"></i> Precios mayoristas competitivos</li>
+                <li><i class="fas fa-check"></i> Diseños variados para todas las edades</li>
+                <li><i class="fas fa-check"></i> Asesoría constante y servicio confiable</li>
+            </ul>
+            <a href="https://wa.me/570000000000?text=Hola,%20quiero%20información%20para%20comprar%20al%20por%20mayor" target="_blank" class="btn btn-primary btn-large">Quiero ser Distribuidor</a>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes preguntas o quieres realizar un pedido? Escríbenos.</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Pedido</label>
+                    <textarea id="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 MoodCaps. Todos los derechos reservados.</p>
+            <p>Tu mood. Tu estilo. Tu gorra.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+// Esperar a que el documento cargue completamente
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Menú de navegación responsive
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Cerrar el menú al hacer clic en un enlace (móvil)
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+
+    // Manejo del formulario de contacto
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        // Simulación de envío
+        alert(`¡Gracias ${nombre}! Hemos recibido tu mensaje. Nos pondremos en contacto contigo al correo ${email}.`);
+
+        // Limpiar el formulario
+        contactForm.reset();
+    });
+});
+
+// Función interactiva para realizar pedidos de productos por WhatsApp
+function mostrarAlerta(nombreProducto) {
+    const telefonoWhatsApp = "570000000000"; // Reemplazar con el número real de WhatsApp
+    const mensaje = encodeURIComponent(`Hola MoodCaps, estoy interesado en el producto: ${nombreProducto}`);
+    const urlWhatsApp = `https://wa.me/${telefonoWhatsApp}?text=${mensaje}`;
+    
+    window.open(urlWhatsApp, '_blank');
+}
+ /* Variables de color basadas en el logo (Monocromático, Negro, Gris Oscuro, Blanco) */
 :root {
     --primary-color: #0d0d0d;
     --accent-color: #2b2b2b;
